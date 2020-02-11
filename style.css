@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Open+Sans|Tajawal&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p
+{
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(pexels-photo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.top-nav {
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 0 15px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.top-nav .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.top-nav .profile .top-nav-menu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: 5px;
+    background-color: white;
+    box-shadow: 0 0 3px black;
+
+}
+
+.top-nav .profile .top-nav-menu a {
+    color: black;
+    border: none;
+    border-radius: 0;
+    text-align: right;
+}
+
+.top-nav .profile .top-nav-menu a:hover {
+    color: orange;
+}
+
+.top-nav .profile:hover .top-nav-menu {
+    display: flex;
+}
+
+
+.top-nav h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-nav .links a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: white;
+    border: 1px solid orange;
+    border-radius: 15px;
+    padding: 5px 20px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.header .header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .header-content .discription {
+    height: calc(100vh - 50px);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .header-content .discription p {
+    font-family: 'Tajawal', sans-serif;
+    color: white;
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.header .header-content .text {
+    height: calc(100vh - 50px);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+
+}
+
+.header .header-content .text p {
+    font-family: 'Tajawal', sans-serif;
+    color: white;
+    font-size: 1.4em;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 60px 20px;
+    text-align: right;
+}
+
+.header .header-content .text p .call-action {
+    text-decoration: none;
+    border: 1px solid mediumblue;
+    padding: 10px;
+    border-radius: 15px;
+    color: whitesmoke;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.sign-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.sign-container select,
+.sign-container input {
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.sign-container .input-row {
+    display: flex;
+    width: 420px;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+.sign-container .sing {
+    width: 400px;
+    padding: 10px;
+    color: white;
+    background-color: orange;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 2em;
+}
+
+.nav-side {
+    background-color: #111;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    font-family: 'Tajawal', sans-serif;
+    font-size: .8em;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+}
+
+.nav-side a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid orange;
+    padding: 20px;
+    text-align: right;
+}
+
+.nav-side a:hover,
+.nav-side a.active {
+    color: orange;
+}
+
+.main-container {
+    margin-top: 60px;
+    margin-left: 190px;
+    display: flex;
+}
+
+.main-container .feed {
+    display: flex;
+    max-width: 760px;
+    border: 1px solid #aaa;
+    justify-content: space-between;
+    margin: 20px 0;
+    flex-direction: row;
+    background-color: #fff;
+    align-items: center;
+    
+}
+
+.main-container .feed .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: .8em;
+}
+
+.main-container .feed .offer .profile h3 a{
+    display: inline-block;
+    text-decoration: none;
+    color: darkblue;
+    font-family: 'Open Sans';
+    margin: 5px;
+}
+
+.main-container .feed .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.main-container .feed .disc {
+    width: 100%;
+}
+
+.main-container .feed .disc .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+}
+
+.main-container .feed .disc .title div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container .feed .disc .title div h3{
+    padding: 10px 0;
+}
+.main-container .feed .disc .title div i{
+    padding: 10px 8px;
+}
+.main-container .feed .disc .title span{
+    padding: 10px;
+}
+
+.main-container .feed .disc .title .price{
+    background-color: orange;
+    color: white;
+    padding: 12px 20px;
+}
+
+.main-container .feed .disc .extra-disc{
+    text-align: right;
+    padding: 20px 10px;
+}
+
+.main-container .feed .disc .category {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    align-items: center;
+}
+.main-container .feed .disc .category a{
+    text-decoration: none;
+    color: #666;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.main-container .feed .disc .interaction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+
+}
+
+.main-container .feed .disc .interaction a{
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+    font-size: .8em;
+}
+
+.main-container .feed .disc .interaction .vote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container .feed .disc .interaction .vote span{
+ display: inline-block;
+ padding: 4px;   
+}
+
+.main-container .aside{
+    flex-direction: column;
+    height: 80vh;
+    border: #ddd 1px solid;
+    width: 400px;
+    margin: 20px 50px;
+}

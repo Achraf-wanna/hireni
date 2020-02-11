@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hireni - التسجيل</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top-nav" style="background-color: black;">
+        <h1><a href="index.html">Hireni</a></h1>
+        <div class="links">
+            <a href="signup.html">التسجيل</a>
+            <a href="#">الدخول</a>
+        </div>
+    </div>
+
+    <form class="sign-container" action="page.html" method="GET">
+        <div class="input-row">
+            <input type="text" placeholder="الإسم الشخصي">
+            <input type="text" placeholder="الإسم العائلي">
+        </div>
+        <input type="text" placeholder="البريد الإلكتروني">
+        <input type="text" placeholder="رقم الهاتف">
+        <input type="password" placeholder="كلمة السر">
+        <input type="password" placeholder="تأكيد كلمة السر">
+        <select>
+            <option value="0">الجهة</option>
+            <option value="casa">أسفي - مراكش</option>
+            <option value="kech">الدار البيضاء - الجديدة</option>
+            <option value="jadida">طنجة تطوان الحسيمة</option>
+            <option value="safi">جهة الرباط سلا القنيطرة</option>
+            <option value="mohamadia">جهة الدار البيضاء سطات</option>
+        </select>
+        <select>
+            <option value="0">المدينة</option>
+            <option value="casa">الدار البيضاء</option>
+            <option value="kech">مراكش</option>
+            <option value="jadida">الجديدة</option>
+            <option value="safi">أسفي</option>
+            <option value="mohamadia">المحمدية</option>
+            <option value="tanger">طنجة</option>
+        </select>
+        <select>
+            <option value="0">الحي</option>
+            <option value="1">درب السلطان</option>
+            <option value="2">عين السبع</option>
+            <option value="3">عين الدياب</option>
+            <option value="4">الجريفات</option>
+            <option value="5">حي وريدة</option>
+        </select>
+        <div class="input-row">
+            <select>
+                <option value="0">يوم الإزدياد</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <select>
+                <option value="0">شهر الإزدياد</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <select>
+                <option value="0">سنة الإزدياد</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="input-row" style="width: 200px; text-align: right;">
+            <label for="gender">الجنس</label>
+            <input type="radio" name="male" id="gender" value="ذكر">ذكر
+            <input type="radio" name="femal" id="gender" value="أنتي">أنتى
+        </div>
+        <input type="submit" class="sing" value="تسجيل">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
